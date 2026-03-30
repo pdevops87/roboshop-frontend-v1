@@ -1,0 +1,6 @@
+FROM                   nginx:1.24.0-bullseye
+RUN                    apt-get update && apt-get install -y unzip
+RUN                    rm -rf /usr/share/nginx/html/*  /etc/nginx/nginx.conf
+COPY                   .  /usr/share/nginx/html/
+COPY                   nginx.conf /etc/nginx/nginx.conf
+
