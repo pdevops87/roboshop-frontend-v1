@@ -10,19 +10,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-    runs-on: [self-hosted]
-    steps:
-      - uses: actions/checkout@v4
-      - run: echo "Building frontend"
-        name: frontend
-  test:
-    runs-on: [self-hosted]
-    steps:
-      - uses: actions/checkout@v4
-      - run: echo "npm test"
-        name: test
-
   docker:
     runs-on: [self-hosted]
     steps:
