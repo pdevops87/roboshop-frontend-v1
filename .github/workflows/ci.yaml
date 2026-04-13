@@ -17,6 +17,19 @@ jobs:
       - run: docker build -t frontend .
         name: build a frontend docker image
 
+  dev:
+    needs: docker
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+        with:
+        repository: pdevops87/roboshop-helm-v1
+      - name: connect to kubernetes api through kubeconfig
+        run: echo aws eks update-kubeconfig --name dev
+      - name: deploy app
+        run: echo helm upgrade -i frontend -f pass-values-templates/frontend.yaml
+
+
 
 
 
