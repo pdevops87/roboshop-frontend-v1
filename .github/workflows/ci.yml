@@ -7,7 +7,7 @@ jobs:
     uses: pdevops87/reusable-github-actions/.github/workflows/ci.yml@main
     with:
       appName: frontend
-      appType: nginx
+      apptype: nginx
 
 
 
