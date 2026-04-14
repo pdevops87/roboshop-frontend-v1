@@ -6,4 +6,5 @@ jobs:
     uses: pdevops87/roboshop-frontend-v1/.github/workflows/ci.yml@main
     with:
       appName: frontend
+      toolName: nginx
 
