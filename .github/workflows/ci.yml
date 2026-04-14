@@ -4,7 +4,9 @@ on:
   workflow_dispatch:
 jobs:
   call-workflow-passing-data:
-    uses: pdevops87/roboshop-frontend-v1/.github/workflows/ci.yml@main
+    uses: pdevops87/reusable-github-actions/.github/workflows/ci.yml@main
     with:
       appName: frontend
+
+
 
