@@ -10,6 +10,7 @@ jobs:
     with:
       appName: frontend
       apptype: nginx
+    secrets: inherit 
 
 
 
