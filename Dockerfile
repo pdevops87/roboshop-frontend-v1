@@ -5,3 +5,7 @@ WORKDIR                /usr/share/nginx/html/
 COPY                   .  /usr/share/nginx/html/
 
 
+# cat /etc/nginx/conf.d/default.conf
+
+
+
